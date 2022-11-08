@@ -10,7 +10,7 @@ rollback:
 	docker compose run api rails db:rollback
 seed:
 	docker compose run api rails db:seed_fu
-c:
+console:
 	docker compose run api rails c
 rubocop:
 	docker compose run api rubocop
