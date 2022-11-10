@@ -94,6 +94,10 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.16.3)
+    monetize (1.12.0)
+      money (~> 6.12)
+    money (6.16.0)
+      i18n (>= 0.6.4, <= 2)
     msgpack (1.6.0)
     mysql2 (0.5.4)
     net-imap (0.3.1)
@@ -110,6 +114,7 @@ GEM
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)
+    power_assert (2.0.2)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -178,6 +183,8 @@ GEM
     rubocop-ast (1.23.0)
       parser (>= 3.1.1.0)
     ruby-progressbar (1.11.0)
+    test-unit (3.5.5)
+      power_assert
     thor (1.2.1)
     timeout (0.3.0)
     tzinfo (2.0.5)
@@ -194,11 +201,13 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   debug
+  monetize
   mysql2 (~> 0.5)
   puma (~> 5.0)
   rails (~> 7.0.4)
   rspec-rails
   rubocop
+  test-unit
   tzinfo-data
 
 RUBY VERSION
